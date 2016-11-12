@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>JEE</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.octest.servlets.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Utilisateurs</servlet-name>
+    <servlet-class>com.octest.servlets.Utilisateurs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Utilisateurs</servlet-name>
+    <url-pattern>/Utilisateurs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Questionnaires</servlet-name>
+    <servlet-class>com.octest.servlets.Questionnaires</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Questionnaires</servlet-name>
+    <url-pattern>/Questionnaires</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Questionnaire</servlet-name>
+    <servlet-class>com.octest.servlets.Questionnaire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Questionnaire</servlet-name>
+    <url-pattern>/Questionnaire</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  		<servlet-name>Stagiaire</servlet-name>
+  		<servlet-class>com.octest.servlets.Stagiaire</servlet-class>
+  		</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Stagiaire</servlet-name>
+  		<url-pattern>/Stagiaire</url-pattern>
+  	</servlet-mapping>
+  		
+  		<servlet>
+  			<servlet-name>Parcours</servlet-name>
+  			<servlet-class>com.octest.servlets.Parcours</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  			<servlet-name>Parcours</servlet-name>
+  			<url-pattern>/Parcours</url-pattern>
+  		</servlet-mapping>
+  
+</web-app>
